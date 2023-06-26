@@ -761,7 +761,7 @@ The method property receives `employeesList` and returns the number of departmen
     
 
 Execution:
-
+```js
     bob@dylan:~$ cat 12-main.js
     import createEmployeesObject from './11-createEmployeesObject.js';
     import createReportObject from './12-createReportObject.js';
@@ -770,7 +770,8 @@ Execution:
         ...createEmployeesObject('engineering', ['Bob', 'Jane']),
         ...createEmployeesObject('marketing', ['Sylvie'])
     };      
-    
+```
+```shell
     const report = createReportObject(employees);
     console.log(report.allEmployees);
     console.log(report.getNumberOfDepartments(report.allEmployees));
@@ -780,7 +781,7 @@ Execution:
     { engineering: [ 'Bob', 'Jane' ], marketing: [ 'Sylvie' ] }
     2
     bob@dylan:~$
-    
+```
 
 **Repo:**
 
